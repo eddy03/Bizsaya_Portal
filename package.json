@@ -4,13 +4,19 @@
   "description": "Bizsaya portal source code using dot template hybrid with webpack",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "wdio",
     "dev": "node index.js",
     "webpack": "webpack --env=dev",
     "compile": "webpack -p --env=prod",
-    "build": "node index.js prod && firebase deploy"
+    "build": "node index.js prod",
+    "deploy": "firebase deploy",
+    "buildanddeploy": "npm run build && npm run deploy"
   },
-  "keywords": ["Bizsaya", "Automation", "FB Pages"],
+  "keywords": [
+    "Bizsaya",
+    "Automation",
+    "FB Pages"
+  ],
   "author": "eddytech03@gmail.com",
   "license": "ISC",
   "dependencies": {
@@ -35,7 +41,15 @@
     "watchr": "^3.0.1",
     "webpack": "^3.5.5"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "chai": "^4.1.2",
+    "mime": "^1.4.0",
+    "mocha": "^3.5.0",
+    "wdio-mocha-framework": "^0.5.11",
+    "wdio-phantomjs-service": "^0.2.2",
+    "wdio-spec-reporter": "^0.1.2",
+    "webdriverio": "^4.8.0"
+  },
   "standard": {
     "ignore": [
       "/src/",
