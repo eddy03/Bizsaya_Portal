@@ -1,0 +1,46 @@
+{
+  "name": "bizsaya_portal",
+  "version": "1.0.0",
+  "description": "Bizsaya portal source code using dot template hybrid with webpack",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "node index.js",
+    "webpack": "webpack --env=dev",
+    "compile": "webpack -p --env=prod",
+    "build": "node index.js prod && firebase deploy"
+  },
+  "keywords": ["Bizsaya", "Automation", "FB Pages"],
+  "author": "eddytech03@gmail.com",
+  "license": "ISC",
+  "dependencies": {
+    "animate.css": "^3.5.2",
+    "async": "^2.5.0",
+    "bootstrap": "^4.0.0-beta",
+    "browser-sync": "^2.18.13",
+    "clean-webpack-plugin": "^0.1.16",
+    "copy-webpack-plugin": "^4.0.1",
+    "css-loader": "^0.28.5",
+    "dot": "^1.1.2",
+    "extract-text-webpack-plugin": "^3.0.0",
+    "ityped": "0.0.10",
+    "jquery": "^3.2.1",
+    "jsonfile": "^3.0.1",
+    "lodash": "^4.17.4",
+    "node-sass": "^4.5.3",
+    "popper.js": "^1.12.3",
+    "sass-loader": "^6.0.6",
+    "scrollmagic": "^2.0.5",
+    "style-loader": "^0.18.2",
+    "watchr": "^3.0.1",
+    "webpack": "^3.5.5"
+  },
+  "devDependencies": {},
+  "standard": {
+    "ignore": [
+      "/src/",
+      "/dist/",
+      "webpack.config.js"
+    ]
+  }
+}

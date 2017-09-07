@@ -1,0 +1,5 @@
+{
+  "verbose": false,
+  "ignore": ["ref/*"],
+  "watch": ["index.js"]
+}

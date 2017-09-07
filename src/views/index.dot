@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, user-scalable=no">
+
+    <title>Bizsaya - Membantu automasi laman sosial Facebook Pages perniagaan anda</title>
+
+    <!-- Chrome, Firefox OS and Opera -->
+    <meta name="theme-color" content="#0088cc">
+    <!-- Windows Phone -->
+    <meta name="msapplication-navbutton-color" content="#0088cc">
+    <!-- iOS Safari -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+    <!-- Metadata -->
+    <meta name="keywords" content="Bizsaya,Bizsaya,Online,Perniagaan,Atastalian,statistik,laporan,saas,sistem,system,websystem,aplikasi web,facebook, messenger, bot, ai, yobb, automated,auto-reply,private-replies" />
+    <meta name="author" content="info@bizsaya.com">
+    <meta name="description" content="Bizsaya merupakan sebuah aplikasi atas talian yang dilengkapi dengan modul Komen, Mesej dan Broadcast bagi digunakan dalam membantu pengurusan laman sosial perniagaan anda dengan mudah, ringkas, berkesan dan kos yang amat berbaloi"/>
+    <meta name="robots" content="noodp"/>
+    <link rel="canonical" href="https://bizsaya.com/" />
+
+    <!-- Facebook graph -->
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Bizsaya, Membantu dalam pengurusan laman sosial perniagaan anda dengan mudah, ringkas, berkesan dan kos yang berbaloi" />
+    <meta property="og:description" content="Bizsaya merupakan sebuah aplikasi atas talian yang dilengkapi dengan modul Komen, Mesej dan Broadcast bagi digunakan dalam membantu pengurusan laman sosial perniagaan anda dengan mudah, ringkas, berkesan dan kos yang amat berbaloi" />
+    <meta property="og:url" content="https://bizsaya.com/" />
+    <meta property="og:site_name" content="Bizsaya" />
+    <meta property="og:image" content="https://storage.googleapis.com/bizsaya_assets/responsive.jpg" />
+    <meta property="fb:app_id" content="175920109485664" />
+
+    <!-- Twitter card -->
+    <meta name="twitter:card" content="summary"/>
+    <meta name="twitter:title" content="Bizsaya, Membantu dalam pengurusan laman sosial perniagaan anda dengan mudah, ringkas, berkesan dan kos yang berbaloi"/>
+    <meta name="twitter:description" content="Bizsaya merupakan sebuah aplikasi atas talian yang dilengkapi dengan modul Komen, Mesej dan Broadcast bagi digunakan dalam membantu pengurusan laman sosial perniagaan anda dengan mudah, ringkas, berkesan dan kos yang amat berbaloi"/>
+
+    <!-- Favicon and bookmark -->
+    <link rel="apple-touch-icon" sizes="57x57" href="/img/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="/img/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="/img/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="/img/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="/img/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="/img/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="/img/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="/img/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/img/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="/img/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/img/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="/img/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/img/favicon-16x16.png">
+    <link rel="manifest" href="/img/manifest.json">
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" />
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="/img/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+
+    <base href="/">
+
+    {{~ it.css :css }}
+    <link rel="stylesheet" href="{{= css }}" type="text/css"/>
+    {{~}}
+
+</head>
+<body>
+
+<div id="fb-root"></div>
+
+<div class="full-image-landing">
+
+    <div class="information-panel" id="information-message"></div>
+
+    <div class="center-information">
+        <div class="brand-name animated jello">
+            <img src="https://storage.googleapis.com/bizsaya_assets/bizsaya_logo_small.png" alt="Logo Bizsaya">
+            <div>Bizsaya</div>
+        </div>
+        <div class="placeholder"><span id="itype"></span></div>
+        <div class="action-btn">
+            <a role="button" class="btn btn-dark btn-lg" href="https://api.bizsaya.com/auth/facebook">Log masuk / Daftar</a>
+        </div>
+    </div>
+
+</div>
+
+<nav id="bizsaya-nav" class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container">
+        <a class="navbar-brand" href="/">
+            <img src="https://storage.googleapis.com/bizsaya_assets/bizsaya_logo_30x30.png" alt="Logo Bizsaya">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active" id="nav-utama">
+                    <a class="nav-link" href="#">Utama <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item" id="nav-testimoni">
+                    <a class="nav-link" href="#">Testimoni</a>
+                </li>
+                <!--<li class="nav-item">-->
+                    <!--<a class="nav-link" href="#">Kelebihan</a>-->
+                <!--</li>-->
+                <!--<li class="nav-item">-->
+                    <!--<a class="nav-link" href="#">Harga</a>-->
+                <!--</li>-->
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<div class="content-section testimoni">
+    <div class="container">
+
+        <h3>
+            Testimoni
+            <small class="text-muted">Pelanggan Bizsaya</small>
+        </h3>
+
+        <div class="row mt-3">
+            {{~ it.testimonies :testimoni:index }}
+                {{? (index === 0 || index === 5) }}
+                    <div class="col-md-6">
+                {{?}}
+                        <li class="media">
+                            <img class="d-flex mr-3 customer-img" src="https://graph.facebook.com/v2.10/{{= testimoni.fbId }}/picture" width="60" height="60" alt="Generic placeholder image">
+                            <div class="media-body">
+                                <blockquote class="blockquote">
+                                    <p class="mb-0">{{= testimoni.testimoni }}</p>
+                                    <footer class="blockquote-footer">
+                                        {{= testimoni.form }}
+                                    </footer>
+                                    <footer class="blockquote-footer no-dashed">
+                                        <a href="https://fb.com/{{= testimoni.url }}" target="_blank">
+                                            {{= testimoni.page }}
+                                        </a>
+                                    </footer>
+                                </blockquote>
+                            </div>
+                        </li>
+                {{? (index === 9 || index === 4) }}
+                    </div>
+                {{?}}
+            {{~}}
+        </div>
+    </div>
+</div>
+
+<footer class="page-footer">
+
+    <div class="container">
+
+        <div class="row">
+            <div class="col-lg-8 about">
+                <p class="lead">Tentang Bizsaya</p>
+                <p>
+                    Bizsaya merupakan sebuah aplikasi atas talian yang dilengkapi dengan modul Komen, Mesej dan Broadcast
+                    yang akan digunakan dalam membantu pengurusan laman sosial (Facebook Pages) perniagaan anda dengan
+                    mudah, ringkas, berkesan dan kos yang amat berbaloi
+                </p>
+                <p>
+                    Bizsaya juga boleh menyimpan maklumat seperti nombor telefon atau emel sekiranya diberikan oleh
+                    prospek anda di wall post Facebook Pages anda mahupun di inbox Facebook Pages anda. Modul broadcast
+                    pula membolehkan anda untuk menghantar mesej terus kepada semua prospek yang pernah berkomunikasi
+                    dengan Facebook Page anda.
+                </p>
+            </div>
+            <div class="col-lg-4">
+
+                <div class="fb-page"
+                     data-href="https://www.facebook.com/perniagaansaya/"
+                     data-tabs="timeline"
+                     data-height="300"
+                     data-small-header="true"
+                     data-adapt-container-width="true"
+                     data-hide-cover="false"
+                     data-show-facepile="true">
+                    <blockquote cite="https://www.facebook.com/perniagaansaya/" class="fb-xfbml-parse-ignore">
+                        <a href="https://www.facebook.com/perniagaansaya/">Bizsaya.com</a>
+                    </blockquote>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+
+    <div class="container">
+        <small>Hak cipta terpelihara Dontpushpush Enterprise. 2016 - 2017</small>
+    </div>
+
+</footer>
+
+{{~ it.js :script }}
+{{? script.match(/main/gi) }}
+<script src="{{= script }}"></script>
+{{?}}
+{{~}}
+</body>
+</html>

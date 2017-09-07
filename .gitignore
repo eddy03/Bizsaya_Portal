@@ -1,0 +1,7 @@
+.idea
+node_modules
+bash.exe.stackdump
+src/data.json
+ref
+dist
+src/resources/private.js
