@@ -131,7 +131,7 @@
                             <img class="d-flex mr-3 customer-img" src="https://graph.facebook.com/v2.10/{{= testimoni.fbId }}/picture" width="60" height="60" alt="Generic placeholder image">
                             <div class="media-body">
                                 <blockquote class="blockquote">
-                                    <p class="mb-0">{{= testimoni.testimoni }}</p>
+                                    <p class="mb-0 text-justify">{{= testimoni.testimoni }}</p>
                                     <footer class="blockquote-footer">
                                         {{= testimoni.form }}
                                     </footer>
