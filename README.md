@@ -27,5 +27,7 @@ All image is hosted on google cloud storage
 ### License 
 MIT
 
-Develop by
+[![JavaScript Style Guide](https://cdn.rawgit.com/standard/standard/master/badge.svg)](https://github.com/standard/standard)
+
+**Develop by**  
 Edi Abdul Rahman <eddytech03@gmail.com>
