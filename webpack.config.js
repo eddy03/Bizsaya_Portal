@@ -23,6 +23,41 @@ module.exports = function (env) {
     allChunks: true
   })
 
+  let plugins = [
+
+    new CleanWebpackPlugin([_DIST_PATH], {
+      root: path.join(__dirname),
+      verbose: true,
+      dry: false
+    }),
+
+    new webpack.LoaderOptionsPlugin({
+      minimize: true,
+      debug: false
+    }),
+
+    extractSass,
+
+    new webpack.ProvidePlugin({
+      $: 'jquery',
+      jQuery: 'jquery',
+      'window.jQuery': 'jquery',
+      Popper: 'popper.js'
+    })
+
+
+  ]
+
+  if(env === 'prod') {
+    plugins.push(
+      new webpack.optimize.UglifyJsPlugin({
+        output: {
+          comments: false
+        }
+      })
+    )
+  }
+
   return {
     entry: {
       main: _MAIN_SOURCE,
@@ -48,28 +83,7 @@ module.exports = function (env) {
         use: 'css-loader'
       }]
     },
-    plugins: [
-
-      new CleanWebpackPlugin([_DIST_PATH], {
-        root: path.join(__dirname),
-        verbose: true,
-        dry: false
-      }),
-
-      new webpack.LoaderOptionsPlugin({
-        minimize: true,
-        debug: false
-      }),
-
-      extractSass,
-
-      new webpack.ProvidePlugin({
-        $: 'jquery',
-        jQuery: 'jquery',
-        'window.jQuery': 'jquery',
-        Popper: 'popper.js'
-      })
-    ],
-    devtool: 'inline-source-map'
+    plugins,
+    devtool: env === 'prod'? 'none' : 'inline-source-map'
   }
 }
