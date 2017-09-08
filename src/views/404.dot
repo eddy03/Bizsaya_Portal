@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+{{# def.head }}
+<body>
+
+    <div class="full-image-landing">
+
+        <div class="center-information page404">
+            <p class="lead">Ralat 404</p>
+            <p>Kami tidak menjumpai halaman yang anda cari.</p>
+            <p>Mungkin halaman tersebut telah dipadam.</p>
+            <a href="/">
+                <p>Kembali ke laman utama</p>
+            </a>
+        </div>
+
+    </div>
+
+{{# def.footer }}
+
+    {{~ it.js :script }}
+    {{? script.match(/main/gi) }}
+    <script src="{{= script }}"></script>
+    {{?}}
+    {{~}}
+</body>
+</html>
