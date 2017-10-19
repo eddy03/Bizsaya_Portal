@@ -94,14 +94,5 @@
     <script src="{{= script }}"></script>
     {{?}}
 {{~}}
-<script>
-    $(document).ready(function () {
-
-      if(window.location.hostname === 'devportal.bizsaya.com') {
-        $('.action-btn > a').attr('href', 'https://devapi.bizsaya.com/auth')
-      }
-
-    })
-</script>
 </body>
 </html>

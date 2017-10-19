@@ -107,6 +107,10 @@ $(document).ready(function () {
       .addClass('no-pd')
   }
 
+  if(window.location.hostname === 'devportal.bizsaya.com') {
+    $('.action-btn > a').attr('href', 'https://devapi.bizsaya.com/auth')
+  }
+
 })
 
 $('#nav-utama').click(function (e) {
