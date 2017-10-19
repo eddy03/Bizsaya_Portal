@@ -193,7 +193,15 @@ function createDataJSONForWebpackCompileResults () {
   return new Promise(resolve => {
     async.auto({
       getFiles: cb => fs.readdir(this.options.dist_path, (err, files) => cb(err, files)),
-      getJSONData: cb => jsonfile.readFile(this.options.source_data, (err, data) => cb(err, data))
+      getJSONData: cb => {
+
+        if(fs.existsSync(this.options.source_data)) {
+          jsonfile.readFile(this.options.source_data, (err, data) => cb(err, data))
+        } else {
+          cb(null, {})
+        }
+
+      }
     }, (err, results) => {
       if (err) {
         throw err
