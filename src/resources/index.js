@@ -108,7 +108,7 @@ $(document).ready(function () {
   }
 
   if(window.location.hostname === 'devportal.bizsaya.com') {
-    $('.action-btn > a').attr('href', 'https://devapi.bizsaya.com/auth')
+    $('.action-btn > a').attr('href', 'https://apibizsaya.herokuapp.com/auth')
   }
 
 })
