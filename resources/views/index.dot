@@ -1,10 +1,11 @@
+<!doctype html>
+<html lang="en">
 <head>
+    <title>Membantu automasi FB page anda | Bizsaya</title>
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, user-scalable=no">
-
-    <title>Bizsaya - Membantu automasi laman sosial Facebook Pages perniagaan anda</title>
 
     <!-- Chrome, Firefox OS and Opera -->
     <meta name="theme-color" content="#0088cc">
@@ -58,8 +59,172 @@
 
     <base href="/">
 
-    {{~ it.css :css }}
-    <link rel="stylesheet" href="{{= css }}" type="text/css"/>
-    {{~}}
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/milligram/1.3.0/milligram.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Ladda/1.0.5/ladda-themeless.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Acme|Roboto" rel="stylesheet">
+    <style>
+        body, html {
+            padding: 0px;
+            margin: 0px;
+        }
 
+        body {
+            width: 100vw;
+            height: 100vh;
+            background: url('brickwall.png');
+            font-family: 'Roboto', sans-serif !important;
+        }
+
+        .container {
+
+        }
+
+        .text-center {
+            text-align: center;
+        }
+
+        .apptitle {
+            transition: all 300ms linear;
+            padding-top: 15px;
+            will-change: auto;
+        }
+
+        .appname {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .appname div:first-child {
+            flex: 1 1 auto;
+            text-align: right;
+        }
+
+        .appname div:last-child {
+            flex: 1 1 auto;
+        }
+
+        .name {
+            transition: all 300ms linear;
+            padding-top: 15px;
+            font-family: 'Acme', sans-serif;
+            text-align: left;
+            margin-left: 15px;
+            color: #000;
+            will-change: auto;
+        }
+
+        a {
+            color: #000;
+            transition: all 300ms linear;
+            will-change: auto;
+        }
+
+        a:hover {
+            color: #007AE6;
+        }
+
+        .links {
+            text-align: center;
+            font-size: 14px;
+        }
+
+        .links div {
+            display: inline-block;
+            padding: 0px 10px;
+        }
+
+        .links div:nth-child(1) {
+            display: none;
+        }
+
+        .links div:nth-child(2) {
+            border-right: 1px solid #000;
+        }
+
+        .login-btn {
+            padding-top: 25px;
+        }
+
+        .login-btn .button {
+            width: 100%;
+            border: 0.1rem solid #000;
+            color: #000;
+            font-size: 14px;
+            transition: all 300ms linear;
+            will-change: auto;
+        }
+        .login-btn .button:hover {
+            border: 0.1rem solid #007AE6;
+            color: #007AE6;
+        }
+        .ladda-button[data-style=expand-right][data-loading] {
+            background: #007AE6;
+            color: #FFF;
+            border: 0.1rem solid blue;
+        }
+        .login-btn .button span.lowercase {
+            text-transform: lowercase;
+        }
+
+        @media (min-width: 40.0rem) {
+            .apptitle {
+                padding-top: calc(100vh / 2 - 120px);
+            }
+
+            .name {
+                font-size: 7rem;
+            }
+
+            .links, .login-btn {
+                max-width: 350px;
+                margin: 0 auto;
+            }
+
+            .links div:nth-child(1) {
+                display: inline-block;
+                border-right: 1px solid #000;
+            }
+
+            .login-btn {
+                max-width: 310px;
+            }
+        }
+    </style>
 </head>
+<body>
+
+<div class="container text-center apptitle">
+    <div class="appname">
+        <div><img src="bizsaya_logo_small_50.png" alt="Logo Bizsaya"></div>
+        <div><h1 class="name">Bizsaya</h1></div>
+    </div>
+    <div class="links">
+        <div>
+            <a href="/aboutus.html">Tentang Bizsaya</a>
+        </div>
+        <div>
+            <a href="/feedbacks.html">Testimoni</a>
+        </div>
+        <div>
+            <a href="https://facebook.com/perniagaansaya">Hubungi Kami</a>
+        </div>
+    </div>
+    <div class="login-btn">
+        <button class="button button-outline ladda-button" data-style="expand-right" id="auth">Log Masuk <span class="lowercase">atau</span> Daftar</button>
+    </div>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.slim.min.js" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Ladda/1.0.5/spin.min.js" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Ladda/1.0.5/ladda.min.js" crossorigin="anonymous"></script>
+<script>
+  $(document).ready(function () {
+    Ladda.bind( 'button' )
+    $('#auth').click(function () {
+      window.location.href = 'https://api.bizsaya.com/auth'
+    })
+  })
+</script>
+</body>
+</html>

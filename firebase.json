@@ -1,5 +1,10 @@
 {
   "hosting": {
-    "public": "dist"
+    "public": "dist",
+    "cleanUrls": true,
+    "rewrites": [ {
+      "source": "/feedbacks",
+      "destination": "/feedbacks.html"
+    } ]
   }
 }

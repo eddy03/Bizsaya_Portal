@@ -1,5 +1,5 @@
 {
   "verbose": false,
-  "ignore": ["ref/*"],
+  "ignore": ["dist/*", "resources/*"],
   "watch": ["index.js"]
 }
