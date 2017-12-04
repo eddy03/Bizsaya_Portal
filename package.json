@@ -1,40 +1,25 @@
 {
-  "name": "bizsaya_portal",
+  "name": "portal",
   "version": "1.0.0",
-  "description": "Bizsaya portal source code using dot template hybrid with webpack",
+  "description": "Source code for bizsaya main portal [https://bizsaya.com](https://bizsaya.com).",
   "main": "index.js",
   "scripts": {
-    "test": "wdio",
-    "dev": "nodemon index.js",
-    "webpack": "webpack --env=dev",
-    "compile": "webpack -p --env=prod",
-    "build": "node index.js prod",
-    "deploy": "firebase deploy",
-    "buildanddeploy": "npm run build && npm run deploy"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "server": "cd dist && http-server -p 3030 -d false",
+    "deploy": "firebase deploy"
   },
-  "keywords": [
-    "Bizsaya",
-    "Automation",
-    "FB Pages"
-  ],
-  "author": "eddytech03@gmail.com",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/eddy03/bizsaya_portal.git"
+  },
+  "keywords": [],
+  "author": "",
   "license": "ISC",
-  "dependencies": {
-    "async": "^2.6.0",
-    "dot": "^1.1.2",
-    "lodash": "^4.17.4",
-    "watchr": "^3.0.1"
+  "bugs": {
+    "url": "https://github.com/eddy03/bizsaya_portal/issues"
   },
+  "homepage": "https://github.com/eddy03/bizsaya_portal#readme",
   "devDependencies": {
-    "http-server": "^0.10.0",
-    "nodemon": "^1.12.1",
-    "standard": "^10.0.3"
-  },
-  "standard": {
-    "ignore": [
-      "/src/",
-      "/dist/",
-      "webpack.config.js"
-    ]
+    "http-server": "^0.10.0"
   }
 }

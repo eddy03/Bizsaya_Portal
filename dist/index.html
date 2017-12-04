@@ -1,0 +1,509 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>Membantu automasi FB page anda | Bizsaya</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, user-scalable=no">
+
+    <!-- Chrome, Firefox OS and Opera -->
+    <meta name="theme-color" content="#0088cc">
+    <!-- Windows Phone -->
+    <meta name="msapplication-navbutton-color" content="#0088cc">
+    <!-- iOS Safari -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+    <!-- Metadata -->
+    <meta name="keywords" content="Bizsaya,Bizsaya,Online,Perniagaan,Atastalian,statistik,laporan,saas,sistem,system,websystem,aplikasi web,facebook, messenger, bot, ai, yobb, automated,auto-reply,private-replies"/>
+    <meta name="author" content="info@bizsaya.com">
+    <meta name="description" content="Bizsaya merupakan sebuah aplikasi atas talian yang dilengkapi dengan modul Komen, Mesej dan Broadcast bagi digunakan dalam membantu pengurusan laman sosial perniagaan anda dengan mudah, ringkas, berkesan dan kos yang amat berbaloi"/>
+    <meta name="robots" content="noodp"/>
+    <link rel="canonical" href="https://bizsaya.com/"/>
+
+    <!-- Facebook graph -->
+    <meta property="og:locale" content="en_US"/>
+    <meta property="og:type" content="website"/>
+    <meta property="og:title" content="Bizsaya, Membantu dalam pengurusan laman sosial perniagaan anda dengan mudah, ringkas, berkesan dan kos yang berbaloi"/>
+    <meta property="og:description" content="Bizsaya merupakan sebuah aplikasi atas talian yang dilengkapi dengan modul Komen, Mesej dan Broadcast bagi digunakan dalam membantu pengurusan laman sosial perniagaan anda dengan mudah, ringkas, berkesan dan kos yang amat berbaloi"/>
+    <meta property="og:url" content="https://bizsaya.com/"/>
+    <meta property="og:site_name" content="Bizsaya"/>
+    <meta property="og:image" content="https://storage.googleapis.com/bizsaya_assets/responsive.jpg"/>
+    <meta property="fb:app_id" content="175920109485664"/>
+
+    <!-- Twitter card -->
+    <meta name="twitter:card" content="summary"/>
+    <meta name="twitter:title" content="Bizsaya, Membantu dalam pengurusan laman sosial perniagaan anda dengan mudah, ringkas, berkesan dan kos yang berbaloi"/>
+    <meta name="twitter:description" content="Bizsaya merupakan sebuah aplikasi atas talian yang dilengkapi dengan modul Komen, Mesej dan Broadcast bagi digunakan dalam membantu pengurusan laman sosial perniagaan anda dengan mudah, ringkas, berkesan dan kos yang amat berbaloi"/>
+
+    <!-- Favicon and bookmark -->
+    <link rel="apple-touch-icon" sizes="57x57" href="https://storage.googleapis.com/bizsaya_assets/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="https://storage.googleapis.com/bizsaya_assets/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="https://storage.googleapis.com/bizsaya_assets/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="https://storage.googleapis.com/bizsaya_assets/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="https://storage.googleapis.com/bizsaya_assets/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="https://storage.googleapis.com/bizsaya_assets/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="https://storage.googleapis.com/bizsaya_assets/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="https://storage.googleapis.com/bizsaya_assets/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="https://storage.googleapis.com/bizsaya_assets/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="https://storage.googleapis.com/bizsaya_assets/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="https://storage.googleapis.com/bizsaya_assets/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="https://storage.googleapis.com/bizsaya_assets/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="https://storage.googleapis.com/bizsaya_assets/favicon-16x16.png">
+    <link rel="manifest" href="https://storage.googleapis.com/bizsaya_assets/manifest.json">
+    <link rel="shortcut icon" href="https://storage.googleapis.com/bizsaya_assets/favicon.ico" type="image/x-icon"/>
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="https://storage.googleapis.com/bizsaya_assets/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+
+    <base href="/">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/milligram/1.3.0/milligram.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Ladda/1.0.5/ladda-themeless.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Acme|Roboto" rel="stylesheet">
+    <style>
+        body, html {
+            padding: 0px;
+            margin: 0px;
+        }
+
+        body {
+            width: 100vw;
+            height: 100vh;
+            background: url('brickwall.png');
+            font-family: 'Roboto', sans-serif !important;
+        }
+
+        .container {
+
+        }
+
+        .text-center {
+            text-align: center;
+        }
+
+        .apptitle {
+            transition: all 300ms linear;
+            padding-top: 15px;
+            will-change: auto;
+        }
+
+        .appname {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .appname div:first-child {
+            flex: 1 1 auto;
+            text-align: right;
+        }
+
+        .appname div:last-child {
+            flex: 1 1 auto;
+        }
+
+        .name {
+            transition: all 300ms linear;
+            padding-top: 15px;
+            font-family: 'Acme', sans-serif;
+            text-align: left;
+            margin-left: 15px;
+            color: #000;
+            will-change: auto;
+        }
+
+        a {
+            color: #000;
+            transition: all 300ms linear;
+            will-change: auto;
+        }
+
+        a:hover {
+            color: #007AE6;
+        }
+
+        .links {
+            text-align: center;
+            font-size: 14px;
+        }
+
+        .links > div {
+            display: inline-block;
+            padding: 0px 10px;
+        }
+
+        .links > div:nth-child(1) {
+            display: none;
+        }
+
+        .links > div:nth-child(2), .links > div:nth-child(3) {
+            border-right: 1px solid #000;
+        }
+
+        .login-btn {
+            padding-top: 25px;
+            opacity: 0;
+        }
+
+        .login-btn .button {
+            width: 100%;
+            border: 0.1rem solid #000;
+            color: #000;
+            font-size: 14px;
+            font-family: Verdana, Geneva, sans-serif !important;
+            transition: all 300ms linear;
+            will-change: auto;
+        }
+
+        .login-btn .button:hover {
+            border: 0.1rem solid #007AE6;
+            color: #007AE6;
+        }
+
+        .ladda-button[data-style=expand-right][data-loading] {
+            background: #007AE6;
+            color: #FFF;
+            border: 0.1rem solid blue;
+        }
+
+        .login-btn .button span.lowercase {
+            text-transform: lowercase;
+        }
+
+        .aboutus-mobile {
+            transition: all 300ms linear;
+            will-change: auto;
+            text-align: center;
+            padding-top: 15px;
+            margin-top: 15px;
+            border-top: 1px dotted #555758;
+            opacity: 0;
+        }
+
+        .hide-mobile {
+            display: none;
+        }
+
+        .tracking-in-expand {
+            -webkit-animation: tracking-in-expand 1.4s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+            animation: tracking-in-expand 1.4s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+        }
+
+        .text-pop-up-top {
+            text-shadow: 0 1px 0 #FFF, 0 2px 0 #494949, 0 3px 0 #7B7777, 0 4px 0 #958F8F, 0 5px 0 #C4BFBF, 0 6px 0 #D9D9D9, 0 7px 0 #cccccc, 0 8px 0 #cccccc, 0 2px 0 #cccccc, 0 2px 2px rgba(0, 0, 0, 0.3);
+        }
+
+        .bounce-bottom {
+            -webkit-animation: bounce-bottom 0.9s both;
+            animation: bounce-bottom 0.9s both;
+        }
+
+        @media (min-width: 40.0rem) {
+            .apptitle {
+                padding-top: calc(100vh / 2 - 120px);
+            }
+
+            .name {
+                font-size: 7rem;
+            }
+
+            .links, .login-btn {
+                max-width: 450px;
+                margin: 0 auto;
+            }
+
+            .links > div:nth-child(1) {
+                display: inline-block;
+                border-right: 1px solid #000;
+            }
+
+            .login-btn {
+                max-width: 310px;
+            }
+
+            .aboutus-mobile {
+                display: none;
+            }
+        }
+
+        @-webkit-keyframes tracking-in-expand {
+            0% {
+                letter-spacing: -0.5em;
+                opacity: 0;
+            }
+            40% {
+                opacity: 0.6;
+            }
+            100% {
+                opacity: 1;
+            }
+        }
+
+        @keyframes tracking-in-expand {
+            0% {
+                letter-spacing: -0.5em;
+                opacity: 0;
+            }
+            40% {
+                opacity: 0.6;
+            }
+            100% {
+                opacity: 1;
+            }
+        }
+
+        @-webkit-keyframes bounce-bottom {
+            0% {
+                -webkit-transform: translateY(0px);
+                transform: translateY(0px);
+                -webkit-animation-timing-function: ease-in;
+                animation-timing-function: ease-in;
+                opacity: 1;
+            }
+            24% {
+                opacity: 1;
+            }
+            40% {
+                -webkit-transform: translateY(-30px);
+                transform: translateY(-30px);
+                -webkit-animation-timing-function: ease-in;
+                animation-timing-function: ease-in;
+            }
+            65% {
+                -webkit-transform: translateY(-16px);
+                transform: translateY(-16px);
+                -webkit-animation-timing-function: ease-in;
+                animation-timing-function: ease-in;
+            }
+            82% {
+                -webkit-transform: translateY(-6px);
+                transform: translateY(-6px);
+                -webkit-animation-timing-function: ease-in;
+                animation-timing-function: ease-in;
+            }
+            93% {
+                -webkit-transform: translateY(-4px);
+                transform: translateY(-4px);
+                -webkit-animation-timing-function: ease-in;
+                animation-timing-function: ease-in;
+            }
+            25%,
+            55%,
+            75%,
+            87% {
+                -webkit-transform: translateY(0px);
+                transform: translateY(0px);
+                -webkit-animation-timing-function: ease-out;
+                animation-timing-function: ease-out;
+            }
+            100% {
+                -webkit-transform: translateY(0px);
+                transform: translateY(0px);
+                -webkit-animation-timing-function: ease-out;
+                animation-timing-function: ease-out;
+                opacity: 1;
+            }
+        }
+
+        @keyframes bounce-bottom {
+            0% {
+                -webkit-transform: translateY(0px);
+                transform: translateY(0px);
+                -webkit-animation-timing-function: ease-in;
+                animation-timing-function: ease-in;
+                opacity: 1;
+            }
+            24% {
+                opacity: 1;
+            }
+            40% {
+                -webkit-transform: translateY(-30px);
+                transform: translateY(-30px);
+                -webkit-animation-timing-function: ease-in;
+                animation-timing-function: ease-in;
+            }
+            65% {
+                -webkit-transform: translateY(-16px);
+                transform: translateY(-16px);
+                -webkit-animation-timing-function: ease-in;
+                animation-timing-function: ease-in;
+            }
+            82% {
+                -webkit-transform: translateY(-6px);
+                transform: translateY(-6px);
+                -webkit-animation-timing-function: ease-in;
+                animation-timing-function: ease-in;
+            }
+            93% {
+                -webkit-transform: translateY(-4px);
+                transform: translateY(-4px);
+                -webkit-animation-timing-function: ease-in;
+                animation-timing-function: ease-in;
+            }
+            25%,
+            55%,
+            75%,
+            87% {
+                -webkit-transform: translateY(0px);
+                transform: translateY(0px);
+                -webkit-animation-timing-function: ease-out;
+                animation-timing-function: ease-out;
+            }
+            100% {
+                -webkit-transform: translateY(0px);
+                transform: translateY(0px);
+                -webkit-animation-timing-function: ease-out;
+                animation-timing-function: ease-out;
+                opacity: 1;
+            }
+        }
+
+    </style>
+</head>
+<body>
+
+<div class="container text-center apptitle">
+    <div class="appname">
+        <div><img src="bizsaya_logo_small_50.png" alt="Logo Bizsaya" style="width: 0"></div>
+        <div><h1 class="name tracking-in-expand text-pop-up-top">Bizsaya</h1></div>
+    </div>
+    <div class="links">
+        <div>
+            <div class="accidents">
+                <a href="/aboutus.html">Tentang Bizsaya</a>
+            </div>
+        </div>
+        <div>
+            <div class="accidents">
+                <a href="/feedbacks.html">Testimoni</a>
+            </div>
+        </div>
+        <div>
+            <div class="accidents">
+                <a href="/policy.html">Polisi</a>
+            </div>
+        </div>
+        <div>
+            <div class="accidents">
+                <div class="breaks">
+                    <a href="https://facebook.com/perniagaansaya">Hubungi Kami</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="login-btn">
+        <button class="button button-outline ladda-button" data-style="expand-right" id="auth">Log Masuk
+            <span class="lowercase">atau</span> Daftar
+        </button>
+    </div>
+
+</div>
+
+<div class="container aboutus-mobile">
+    <p>
+        Bizsaya merupakan sebuah aplikasi atas talian yang digunakan untuk membantu proses automasi beberapa aspek di
+        laman sosial Facebook Pages perniagaan anda.
+    </p>
+    <p>
+        Bizsaya mempunyai kemampuan untuk automasikan proses auto-reply pada laman sosial Facebook Pages perniagaan anda
+        dengan mudah.
+        Selain itu juga, Bizsaya akan menyimpan maklumat-maklumat yang ditinggalkan oleh prospek anda didalam komen
+        mahupun inbox FB page anda
+        dengan mudah dan akan terus memaklumkan kepada anda secara semasa!
+    </p>
+    <p>
+        Kos penggunaan aplikasi Bizsaya hanya RM10 setiap bulan bagi setiap 1 FB page yang di-automasikan. Selain itu
+        juga,
+        Kami memberikan <strong>tempoh percubaan selama 15 hari tanpa sebarang bayaran!</strong>
+    </p>
+    <p>
+        Kami di Bizsaya akan terus menerus memastikan Bizsaya berkembang dengan lebih baik dan terkehadapan lagi.
+        Menjadikan pelaburan anda di Bizsaya satu pelaburan yang efektif serta efisient serta memastikan perniagaan anda
+        seiring dengan kecanggihan teknologi.
+    </p>
+    <p>
+        Sekiranya anda mempunyai persoalan, komen, pandangan, cadangan. Whatsapp kami ke nombor yang berikut.
+        <a href="https://api.whatsapp.com/send?phone=60172631183&text=saya%20ingin%20tahu%20lebih%20lanjut%20tentang%20Bizsaya"><strong>0172631883</strong></a>
+    </p>
+    <p>
+        Terima kasih<span class="hide-mobile">,</span>
+        <br>
+        Ikhlas<span class="hide-mobile">,</span>
+        <br>
+        Bizsaya
+    </p>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.slim.min.js" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Ladda/1.0.5/spin.min.js" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Ladda/1.0.5/ladda.min.js" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.2.0/anime.min.js" crossorigin="anonymous"></script>
+<script>
+  $(document).ready(function () {
+    Ladda.bind('button')
+    $('#auth').click(function () {
+      console.log(window.location.hostname)
+      // window.location.href = 'https://api.bizsaya.com/auth'
+    })
+
+    var relativeOffset = anime.timeline()
+
+    relativeOffset
+      .add({
+        targets: '.appname img',
+        width: [
+          { value: 100, duration: 900, easing: 'easeInQuad' },
+          { value: 50, duration: 500, easing: 'easeOutQuad' }
+        ],
+        duration: 2000
+      })
+      .add({
+        targets: '.aboutus-mobile',
+        opacity: 1,
+        duration: 4000
+      })
+
+    var accident = anime.timeline()
+
+    accident
+      .add({
+        targets: '.login-btn',
+        translateY: [
+          { value: 230, duration: 0 },
+          { value: 0, duration: 1000, easing: 'easeOutElastic' }
+        ],
+        opacity: {
+          value: 1,
+          duration: 500
+        },
+        delay: 1400
+      })
+      .add({
+        targets: '.accidents',
+        offset: '-=1100',
+        begin: function (anim) {
+          if (anim.began === true) {
+            $('.accidents').addClass('bounce-bottom')
+          }
+        }
+      })
+      .add({
+        targets: '.breaks',
+        rotate: [
+          { value: -20, duration: 400, easing: [ 0.355, 1.650, 0.655, 0.760 ], elasticity: 1000 },
+          { value: 0, duration: 900, delay: 2000 },
+        ],
+        translateY: [
+          { value: 10, duration: 400, easing: [ 0.355, 1.650, 0.655, 0.760 ], elasticity: 1000 },
+          { value: 0, duration: 900, delay: 2000 },
+        ],
+        transformOrigin: "100% 100% 0",
+        offset: 1800
+      })
+
+  })
+</script>
+</body>
+</html>
