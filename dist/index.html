@@ -444,8 +444,11 @@
   $(document).ready(function () {
     Ladda.bind('button')
     $('#auth').click(function () {
-      console.log(window.location.hostname)
-      // window.location.href = 'https://api.bizsaya.com/auth'
+      if(window.location.hostname === 'localhost') {
+        window.location.href = 'http://localhost:3000/auth'
+      } else {
+        window.location.href = 'https://api.bizsaya.com/auth'
+      }
     })
 
     var relativeOffset = anime.timeline()
