@@ -86,6 +86,7 @@
         }
 
         h2 {
+            margin-top: 15px;
             margin-bottom: 10px;
         }
 
@@ -120,12 +121,125 @@
                 flex: 1 1 50%;
             }
         }
+
+        .testimoni-container-2 {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: flex-start;
+            align-content: flex-start
+        }
+
+        .testimoni-container-2 > div {
+            width: calc((112.0rem / 2) - 30px);
+        }
     </style>
 </head>
 <body>
 <div class="container">
     <h2>Testimoni Bizsaya</h2>
     <div><a href="/">Utama</a> &raquo; Testimoni</div>
+    <div class="testimoni-container-2">
+        <div>
+            <blockquote>
+                <p>
+                    Sangat membantu melancarkan proses menjawab setiap pm dari fans.
+                    Juga sentiasa upgrade mengikut permintaan pengguna bizsaya.
+                    Sgt recommended! Harga pula sangat berbaloi 🙂
+                </p>
+                <div class="avatar">
+                    <div class="avatar-container">
+                        <img src="https://graph.facebook.com/v2.10/1612680708761925/picture"
+                             alt="PIPOP~PinkyPonkyPrincess" />
+                    </div>
+                    <div class="avatar-info">
+
+                        <small>
+                            Rozaihan Razali<br>
+                            <a href="https://fb.com/332221333489915" target="_blank">PIPOP~PinkyPonkyPrincess</a>
+                        </small>
+
+                    </div>
+                </div>
+            </blockquote>
+        </div>
+        <div>
+            <blockquote>
+                <p>
+                    1 je nak cakap: Bizsaya memang terbaik! Memang best kan? Bila komen "pm" masuk bertalu-talu.
+                    Tapi yang x bestnya, Xdan nak manually reply di komen, seterusnya ke inbox utk pm customer 1-1!
+                    Yang ada "masalah" macam ni,ha eloklah laburkan duit untuk JIMATKAN MASA u'alls untuk close sale
+                    customer.
+                    Pasti sales juga meningkat bilamana servis melayan customer dapat dilakukan dengan pantas.
+                </p>
+                <div class="avatar">
+                    <div class="avatar-container">
+                        <img src="https://graph.facebook.com/v2.10/1307035752719255/picture"
+                             alt="Loubnaa - Comfy Nursing Wear" />
+                    </div>
+                    <div class="avatar-info">
+
+                        <small>
+                            Zaleha Abdul Razak<br>
+                            <a href="https://fb.com/1656067844661715" target="_blank">Loubnaa - Comfy Nursing Wear</a>
+                        </small>
+
+                    </div>
+                </div>
+            </blockquote>
+        </div>
+        <div>
+            <blockquote>
+                <p>
+                    Salam Tuan Akak ucapkan ribuan trma kasih atas kesabaran tunjuk ajar menggunakan BIZSAYA Kini akak
+                    lebih mudah menjawap customer2
+                    walau bila2 masa dgn sistem autoreply dan yg paling best akak dapat simpan database untk followup
+                    customer2 akak..
+                    Alhamdulillah sales akak meningkat mendadak kerana customer2 akak berpuasahati kerana akak dapat
+                    followup mrka dgn kadar yg tecepat Tq BIZSAYA
+                </p>
+                <div class="avatar">
+                    <div class="avatar-container">
+                        <img src="https://graph.facebook.com/v2.10/1606596526021718/picture"
+                             alt="Reezqa Global Health n Beauty Care" />
+                    </div>
+                    <div class="avatar-info">
+
+                        <small>
+                            Fuyoo HQ Norsiyah Suib<br>
+                            <a href="https://fb.com/1411841059123517" target="_blank">Reezqa Global Health n Beauty Care</a>
+                        </small>
+
+                    </div>
+                </div>
+            </blockquote>
+        </div>
+        <div>
+            <blockquote>
+                <p>
+                    Player tegar fb ads, korang mesti guna bizsaya. Murah ya amat. Yang paling penting keje memang jadi
+                    mudah dah.
+                    Komen, pm semua auto. Korang boleh tidur jap Overall memang puas hati sistem lajuuuu
+                </p>
+                <div class="avatar">
+                    <div class="avatar-container">
+                        <img src="https://graph.facebook.com/v2.10/376121072767581/picture"
+                             alt="Women Desiree Suffah Beauty" />
+                    </div>
+                    <div class="avatar-info">
+
+                        <small>
+                            Zahidah Mohd Isa<br>
+                            <a href="https://fb.com/292895242351" target="_blank">Women Desiree Suffah Beauty</a>
+                        </small>
+
+                    </div>
+                </div>
+            </blockquote>
+        </div>
+        <div>
+
+        </div>
+    </div>
     <div class="testimoni-container">
         <div class="collumn-1">
             <blockquote>
@@ -373,14 +487,23 @@
         </div>
     </div>
 </div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.2.0/anime.min.js" crossorigin="anonymous"></script>
+<script>
+  $(document).ready(function () {
+
+    var ani = anime.timeline()
+
+  })
+</script>
 <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-82438198-1"></script>
 <script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'UA-82438198-1');
+  if(window.location.hostname !== 'localhost') {
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'UA-82438198-1');
+  }
 </script>
 </body>
 </html>
