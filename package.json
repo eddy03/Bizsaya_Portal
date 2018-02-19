@@ -6,6 +6,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "server": "cd dist && http-server -p 3030 -d false",
+    "titan": "cd Titan-master/Titan-master && http-server -p 3030 -d false",
+    "porto": "cd HTML && http-server -p 3031 -d false",
     "deploy": "firebase deploy"
   },
   "repository": {
