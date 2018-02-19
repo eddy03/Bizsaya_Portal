@@ -1,60 +1,27 @@
 {
-  "name": "bizsaya_portal",
+  "name": "portal",
   "version": "1.0.0",
-  "description": "Bizsaya portal source code using dot template hybrid with webpack",
+  "description": "Source code for bizsaya main portal [https://bizsaya.com](https://bizsaya.com).",
   "main": "index.js",
   "scripts": {
-    "test": "wdio",
-    "dev": "node index.js",
-    "webpack": "webpack --env=dev",
-    "compile": "webpack -p --env=prod",
-    "build": "node index.js prod",
-    "deploy": "firebase deploy",
-    "buildanddeploy": "npm run build && npm run deploy"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "server": "cd dist && http-server -p 3030 -d false",
+    "titan": "cd Titan-master/Titan-master && http-server -p 3030 -d false",
+    "porto": "cd HTML && http-server -p 3031 -d false",
+    "deploy": "firebase deploy"
   },
-  "keywords": [
-    "Bizsaya",
-    "Automation",
-    "FB Pages"
-  ],
-  "author": "eddytech03@gmail.com",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/eddy03/bizsaya_portal.git"
+  },
+  "keywords": [],
+  "author": "",
   "license": "ISC",
-  "dependencies": {
-    "animate.css": "^3.5.2",
-    "async": "^2.5.0",
-    "bootstrap": "^4.0.0-beta",
-    "browser-sync": "^2.18.13",
-    "clean-webpack-plugin": "^0.1.16",
-    "copy-webpack-plugin": "^4.0.1",
-    "css-loader": "^0.28.5",
-    "dot": "^1.1.2",
-    "extract-text-webpack-plugin": "^3.0.0",
-    "ityped": "0.0.10",
-    "jquery": "^3.2.1",
-    "jsonfile": "^3.0.1",
-    "lodash": "^4.17.4",
-    "node-sass": "^4.5.3",
-    "popper.js": "^1.12.3",
-    "sass-loader": "^6.0.6",
-    "scrollmagic": "^2.0.5",
-    "style-loader": "^0.18.2",
-    "watchr": "^3.0.1",
-    "webpack": "^3.5.5"
+  "bugs": {
+    "url": "https://github.com/eddy03/bizsaya_portal/issues"
   },
+  "homepage": "https://github.com/eddy03/bizsaya_portal#readme",
   "devDependencies": {
-    "chai": "^4.1.2",
-    "mime": "^1.4.0",
-    "mocha": "^3.5.0",
-    "wdio-mocha-framework": "^0.5.11",
-    "wdio-phantomjs-service": "^0.2.2",
-    "wdio-spec-reporter": "^0.1.2",
-    "webdriverio": "^4.8.0"
-  },
-  "standard": {
-    "ignore": [
-      "/src/",
-      "/dist/",
-      "webpack.config.js"
-    ]
+    "http-server": "^0.10.0"
   }
 }
