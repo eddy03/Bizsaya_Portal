@@ -3,12 +3,6 @@
     "public": "dist",
     "cleanUrls": true,
     "rewrites": [ {
-      "source": "/feedbacks",
-      "destination": "/feedbacks.html"
-    }, {
-      "source": "/aboutus",
-      "destination": "/aboutus.html"
-    }, {
       "source": "/policy",
       "destination": "/policy.html"
     } ]
